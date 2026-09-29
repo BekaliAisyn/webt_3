@@ -1,29 +1,106 @@
 
-body {
-font-family: Arial, sans-serif;
+body{
+font-family:'Arial',sans-serif;
+background:#f8f9fa;
 }
 
-h1 {
-font-size: 40px;
+
+.navbar{
+background:#111827;
 }
 
-.boxes {
+
+.hero{
+padding:60px 20px;
+background:white;
+}
+
+
+.hero h1{
+font-size:45px;
+font-weight:700;
+}
+
+
+.section-title{
+margin:35px 0 20px;
+font-weight:700;
+}
+
+
+.boxes{
 display:flex;
 gap:20px;
 }
 
-.boxes div {
-background:#ddd;
-padding:40px;
-flex:1;
+
+.boxes div{
+background:#2563eb;
+color:white;
+padding:45px;
 text-align:center;
+border-radius:15px;
+flex:1;
+font-size:20px;
+}
+
+
+.project-card{
+background:white;
+padding:30px;
+border-radius:18px;
+margin-bottom:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:.3s;
+}
+
+
+.project-card:hover{
+transform:translateY(-8px);
+}
+
+
+.icon{
+font-size:40px;
+}
+
+
+.project-card button{
+border:none;
+background:#2563eb;
+color:white;
+padding:10px 20px;
+border-radius:20px;
+}
+
+
+.profile-card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.portfolio-area{
+margin-top:50px;
+margin-bottom:50px;
+}
+
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 
 /* Tablet */
 @media(max-width:992px){
-h1{
-font-size:32px;
+
+.hero h1{
+font-size:35px;
 }
 
 .boxes{
@@ -33,13 +110,15 @@ flex-wrap:wrap;
 .boxes div{
 flex-basis:45%;
 }
+
 }
 
 
 /* Mobile */
 @media(max-width:576px){
-h1{
-font-size:24px;
+
+.hero h1{
+font-size:26px;
 }
 
 .boxes{
@@ -49,13 +128,5 @@ flex-direction:column;
 .boxes div{
 width:100%;
 }
-}
 
-.card{
-margin-bottom:20px;
-}
-
-.sidebar{
-background:#f1f1f1;
-padding:20px;
 }
