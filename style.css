@@ -1,0 +1,61 @@
+
+body {
+font-family: Arial, sans-serif;
+}
+
+h1 {
+font-size: 40px;
+}
+
+.boxes {
+display:flex;
+gap:20px;
+}
+
+.boxes div {
+background:#ddd;
+padding:40px;
+flex:1;
+text-align:center;
+}
+
+
+/* Tablet */
+@media(max-width:992px){
+h1{
+font-size:32px;
+}
+
+.boxes{
+flex-wrap:wrap;
+}
+
+.boxes div{
+flex-basis:45%;
+}
+}
+
+
+/* Mobile */
+@media(max-width:576px){
+h1{
+font-size:24px;
+}
+
+.boxes{
+flex-direction:column;
+}
+
+.boxes div{
+width:100%;
+}
+}
+
+.card{
+margin-bottom:20px;
+}
+
+.sidebar{
+background:#f1f1f1;
+padding:20px;
+}
